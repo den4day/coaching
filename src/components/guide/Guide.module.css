@@ -1,0 +1,186 @@
+.container {
+	box-sizing: border-box;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.guide {
+	padding: 158px 0px 139px;
+}
+
+.guide__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.guide__text {
+	max-width: 550px;
+}
+
+.guide__header {
+	color: #333461;
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 56px;
+	letter-spacing: -0.5px;
+	margin-bottom: 22px;
+}
+
+.guide__info {
+	color: #4a556c;
+	font-size: 22px;
+	line-height: 33px;
+	margin-bottom: 22px;
+}
+
+.guide__infoPart:first-child {
+	margin-bottom: 20px;
+}
+
+.guide__infoPart:last-child {
+	font-size: 17px;
+	line-height: 21px;
+}
+
+.guide__btn {
+	font-size: 14px;
+	line-height: 25px;
+	padding: 9px 45px;
+	border-radius: 10px;
+	background: #20ad96;
+	color: #ffffff;
+	transition: 0.3s ease-in-out;
+}
+
+.guide__btn:hover {
+	opacity: 0.6;
+	transform: scale(0.95);
+	transition: opacity 0.3s, transform 0.3s ease-in-out;
+}
+
+.guide__book {
+	width: 446px;
+	height: 581px;
+	color: #ffffff;
+	position: relative;
+	background-color: #463c86;
+}
+
+.guide__circle {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translate(35%, -35%);
+	width: 96px;
+	height: 96px;
+	background: #20ad96;
+	border-radius: 50%;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.guide__link {
+	transition: 0.3s ease-in-out;
+}
+
+.guide__link:hover {
+	opacity: 0.6;
+}
+
+.guide__title {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	font-size: 48px;
+	color: #ffffff;
+	max-width: 218px;
+	z-index: 2;
+}
+
+.guide__line {
+	padding: 24px 0px;
+	position: absolute;
+	left: 0%;
+	bottom: 5%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	font-size: 8px;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.guide__iconImg {
+	margin-right: 4px;
+}
+
+.guide__subTitle {
+	font-size: 14px;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.guide__string {
+}
+
+.guide__bgImg {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.guide__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.guide__book {
+		width: 446px;
+		height: 581px;
+		margin: 80px 48px 0px auto;
+		color: #ffffff;
+		position: relative;
+		background-color: #463c86;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: none;
+	}
+
+	.guide__book {
+		display: none;
+	}
+}

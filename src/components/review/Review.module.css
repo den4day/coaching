@@ -1,0 +1,154 @@
+.container {
+	box-sizing: border-box;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.review {
+	padding: 120px 0px 219px;
+	background-color: #faf8f6;
+}
+
+.header {
+	max-width: 530px;
+	color: #333461;
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 56px;
+	letter-spacing: -0.48px;
+	margin-bottom: 37px;
+}
+
+.review__list {
+	display: flex;
+}
+
+.review__item {
+	display: flex;
+	flex-direction: column;
+	padding: 48px;
+	background-color: #ffffff;
+	letter-spacing: -0.7px;
+	line-height: 32px;
+	margin-right: 37px;
+	transition: 0.3s ease-in-out;
+}
+
+.review__item:hover {
+	opacity: 0.6;
+	transform: scale(0.95);
+	transition: opacity 0.3s, transform 0.3s ease-in-out;
+}
+
+.review__item:first-child {
+	position: relative;
+}
+
+.review__item:last-child {
+	margin-right: 0px;
+}
+
+.review__text {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.review__name {
+	color: #333461;
+	font-size: 24px;
+	font-family: Kumbh Sans;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.review__userImg {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 15px;
+}
+
+.review__rating {
+}
+
+.review__starImg {
+	margin-right: 4px;
+}
+
+.review__starImg:last-child {
+	margin-right: 0px;
+}
+
+.review__cursorImg {
+	position: absolute;
+	bottom: -15%;
+	right: 25%;
+	width: 74px;
+	height: 74px;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.review__list {
+		flex-direction: column;
+	}
+
+	.review__item {
+		text-align: center;
+		margin-right: 0px;
+		margin-bottom: 80px;
+	}
+
+	.review__item:last-child {
+		margin-bottom: 0px;
+	}
+
+	.review__userImg {
+		margin: 0 auto 20px;
+	}
+
+	.review__cursorImg {
+		bottom: 10%;
+		right: 10%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: none;
+	}
+
+	.review__item {
+		padding: 20px;
+		text-align: left;
+	}
+
+	.review__userImg {
+		margin: 0 0 20px;
+	}
+
+	.review {
+		padding-bottom: 80px;
+	}
+}

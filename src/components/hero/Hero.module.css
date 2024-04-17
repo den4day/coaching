@@ -1,0 +1,144 @@
+.container {
+	box-sizing: border-box;
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.hero {
+	padding-top: 55px;
+	background-color: #faf8f6;
+	margin-bottom: 14px;
+}
+
+.hero__decorImg {
+	margin-bottom: 68px;
+}
+
+.hero__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero__tagline {
+	opacity: 0.4;
+	margin-bottom: 6px;
+}
+
+.hero__header {
+	max-width: 520px;
+	color: #333461;
+	font-size: 72px;
+	font-weight: 800;
+	line-height: 120%;
+	margin-bottom: 18px;
+}
+
+.hero__info {
+	max-width: 545px;
+	font-size: 18px;
+	font-family: Kumbh Sans;
+	line-height: 160%;
+	margin-bottom: 18px;
+}
+
+.hero__btn {
+	padding: 9px 45px;
+	border-radius: 10px;
+	font-size: 14px;
+	color: #ffffff;
+	background: #20ad96;
+	line-height: 24px;
+	transition: 0.3s ease-in-out;
+}
+
+.hero__btn:hover {
+	opacity: 0.6;
+	transform: scale(0.95);
+	transition: opacity 0.3s, transform 0.3s ease-in-out;
+}
+
+.hero__photo {
+	position: relative;
+}
+
+.hero__success {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform: translate(-50%, -50%);
+	padding: 24px;
+	background: #ffffff;
+}
+
+.hero__target {
+	margin-right: 16px;
+}
+
+.hero__accuracy {
+	color: #333461;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 32px;
+}
+
+.hero__rate {
+	line-height: 24px;
+}
+
+@media screen and (max-width: 1400px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.hero__wrapper {
+		flex-direction: column;
+	}
+
+	.hero__photo {
+		margin: 160px 0px 0px auto;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+
+	.hero__success {
+		top: auto;
+		left: auto;
+		right: 0px;
+		bottom: 0px;
+		transform: translate(0%, 0%);
+		border-top-left-radius: 50px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.container {
+		max-width: none;
+	}
+
+	.hero__header {
+		font-size: 56px;
+	}
+
+	.hero__photo {
+		display: none;
+	}
+}
